@@ -1,27 +1,14 @@
-# App
+# Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Neste app, criei rotas em angular usando BrowserModule e forms usando ReactiveFormsModule e FormsModule.
 
-## Development server
+- A forma de criar componentes é mais livre que React. Podemos criar funções separadas do html, o que pode ser
+mais organizado para componentes maiores. Por outro lado, ficar mudando de arquivo acaba perdendo um pouco do organização.
+- O componente é feito usando html em vez de uma sintaxe própria como react. Isso acaba sendo melhor para usuários
+iniciais de html, porém se torna mais difícil com o tempo, porque estamos escrevendo strings em vez de variáveis.
+- O roteamento foi fácil de usar. Simplesmente adicionei módulos no module. 
+- O forms é mais chato que em React, já que estou acostumado com estados. 
+    - Parece que escrever strings é mais lento.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
