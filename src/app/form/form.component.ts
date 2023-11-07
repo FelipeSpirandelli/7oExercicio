@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { LogService } from '../services/log.service';
 
 @Component({
   selector: 'app-form',
@@ -12,12 +13,12 @@ export class FormComponent {
     email: new FormControl('')
   });
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private logService: LogService) {}
 
   onSubmit() {
     // Envia os dados para o servidor Node.js
     this.http.post('http://localhost:3000/data', this.dataForm.value).subscribe(response => {
-      console.log('Dados enviados com sucesso', response);
+      this.logService.add(`Dados enviados! Nome: ${this.dataForm.value.name} Email: ${this.dataForm.value.email}`);
     });
   }
 }
